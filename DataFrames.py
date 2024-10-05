@@ -1,10 +1,8 @@
 import pandas as pd
-
-datos = {"nombre": ["Alice", "Bob", "Charlie"],
-         "edad": [25, 30, 35],
-         "Ciudad": ["A", "B", "C"]}
-
-df = pd.DataFrame(datos)
+datos = {'Nombre': ['Alice', 'Bob', 'Charlie'],
+         'Edad': [25, 30, 35],
+         'Ciudad': ['A', 'B', 'C']}
+df = pd.DataFrame(datos, index=['a', 'b', 'c'])
 print(df)
 #Seleccionar datos con loc[] # multiples valores    
 seleccion_loc = df.loc['b', 'Edad'] 
